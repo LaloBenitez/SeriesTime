@@ -16,7 +16,8 @@
 		22B1461619F7048C00C0ACA0 /* SeriesTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1461519F7048C00C0ACA0 /* SeriesTimeTests.m */; };
 		22B1462119F706F000C0ACA0 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462019F706F000C0ACA0 /* RegisterViewController.m */; };
 		22B1462419F7070400C0ACA0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462319F7070400C0ACA0 /* MainViewController.m */; };
-		22B1462719F70A2200C0ACA0 /* MyFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462619F70A2200C0ACA0 /* MyFavViewController.m */; };
+		22B1462A19F70B6700C0ACA0 /* MyFavTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */; };
+		22B1462D19F70BB500C0ACA0 /* SeriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,10 @@
 		22B1462019F706F000C0ACA0 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		22B1462219F7070400C0ACA0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		22B1462319F7070400C0ACA0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		22B1462519F70A2200C0ACA0 /* MyFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavViewController.h; sourceTree = "<group>"; };
-		22B1462619F70A2200C0ACA0 /* MyFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavViewController.m; sourceTree = "<group>"; };
+		22B1462819F70B6700C0ACA0 /* MyFavTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavTableViewController.h; sourceTree = "<group>"; };
+		22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavTableViewController.m; sourceTree = "<group>"; };
+		22B1462B19F70BB500C0ACA0 /* SeriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesTableViewController.h; sourceTree = "<group>"; };
+		22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,17 +93,19 @@
 		22B145F819F7048C00C0ACA0 /* SeriesTime */ = {
 			isa = PBXGroup;
 			children = (
+				22B1462819F70B6700C0ACA0 /* MyFavTableViewController.h */,
+				22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */,
 				22B145FD19F7048C00C0ACA0 /* AppDelegate.h */,
 				22B145FE19F7048C00C0ACA0 /* AppDelegate.m */,
 				22B1460019F7048C00C0ACA0 /* ViewController.h */,
 				22B1460119F7048C00C0ACA0 /* ViewController.m */,
-				22B1462519F70A2200C0ACA0 /* MyFavViewController.h */,
-				22B1462619F70A2200C0ACA0 /* MyFavViewController.m */,
 				22B1461F19F706F000C0ACA0 /* RegisterViewController.h */,
 				22B1462019F706F000C0ACA0 /* RegisterViewController.m */,
-				22B1460319F7048C00C0ACA0 /* Main.storyboard */,
 				22B1462219F7070400C0ACA0 /* MainViewController.h */,
 				22B1462319F7070400C0ACA0 /* MainViewController.m */,
+				22B1460319F7048C00C0ACA0 /* Main.storyboard */,
+				22B1462B19F70BB500C0ACA0 /* SeriesTableViewController.h */,
+				22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */,
 				22B1460619F7048C00C0ACA0 /* Images.xcassets */,
 				22B1460819F7048C00C0ACA0 /* LaunchScreen.xib */,
 				22B145F919F7048C00C0ACA0 /* Supporting Files */,
@@ -236,9 +241,10 @@
 			files = (
 				22B1460219F7048C00C0ACA0 /* ViewController.m in Sources */,
 				22B145FF19F7048C00C0ACA0 /* AppDelegate.m in Sources */,
-				22B1462719F70A2200C0ACA0 /* MyFavViewController.m in Sources */,
 				22B145FC19F7048C00C0ACA0 /* main.m in Sources */,
+				22B1462A19F70B6700C0ACA0 /* MyFavTableViewController.m in Sources */,
 				22B1462419F7070400C0ACA0 /* MainViewController.m in Sources */,
+				22B1462D19F70BB500C0ACA0 /* SeriesTableViewController.m in Sources */,
 				22B1462119F706F000C0ACA0 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
