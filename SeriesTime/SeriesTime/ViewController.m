@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface ViewController ()
 
@@ -15,6 +16,12 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    //Facebook Quick Start
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    loginView.center = self.view.center;
+    [self.view addSubview:loginView];
+    //End Facebook
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

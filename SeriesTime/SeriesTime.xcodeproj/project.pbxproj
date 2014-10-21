@@ -18,6 +18,7 @@
 		22B1462419F7070400C0ACA0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462319F7070400C0ACA0 /* MainViewController.m */; };
 		22B1462A19F70B6700C0ACA0 /* MyFavTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */; };
 		22B1462D19F70BB500C0ACA0 /* SeriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */; };
+		22B1463219F7103B00C0ACA0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B1463119F7103B00C0ACA0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavTableViewController.m; sourceTree = "<group>"; };
 		22B1462B19F70BB500C0ACA0 /* SeriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesTableViewController.h; sourceTree = "<group>"; };
 		22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesTableViewController.m; sourceTree = "<group>"; };
+		22B1463119F7103B00C0ACA0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B1463219F7103B00C0ACA0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +96,7 @@
 		22B145F819F7048C00C0ACA0 /* SeriesTime */ = {
 			isa = PBXGroup;
 			children = (
-				22B1462819F70B6700C0ACA0 /* MyFavTableViewController.h */,
-				22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */,
+				22B1463119F7103B00C0ACA0 /* FacebookSDK.framework */,
 				22B145FD19F7048C00C0ACA0 /* AppDelegate.h */,
 				22B145FE19F7048C00C0ACA0 /* AppDelegate.m */,
 				22B1460019F7048C00C0ACA0 /* ViewController.h */,
@@ -104,6 +106,8 @@
 				22B1462219F7070400C0ACA0 /* MainViewController.h */,
 				22B1462319F7070400C0ACA0 /* MainViewController.m */,
 				22B1460319F7048C00C0ACA0 /* Main.storyboard */,
+				22B1462819F70B6700C0ACA0 /* MyFavTableViewController.h */,
+				22B1462919F70B6700C0ACA0 /* MyFavTableViewController.m */,
 				22B1462B19F70BB500C0ACA0 /* SeriesTableViewController.h */,
 				22B1462C19F70BB500C0ACA0 /* SeriesTableViewController.m */,
 				22B1460619F7048C00C0ACA0 /* Images.xcassets */,
@@ -367,6 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SeriesTime",
+				);
 				INFOPLIST_FILE = SeriesTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +387,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SeriesTime",
+				);
 				INFOPLIST_FILE = SeriesTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
