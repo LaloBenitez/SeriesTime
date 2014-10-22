@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface RegisterViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *txtNewUser;
+@property (strong, nonatomic) IBOutlet UITextField *txtNewPsw;
+@property (strong, nonatomic) IBOutlet UITextField *txtEmail;
+- (IBAction)Register:(id)sender;
 
 @end

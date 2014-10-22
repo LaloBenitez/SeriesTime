@@ -24,6 +24,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Parse Registration
+- (IBAction)Register:(id)sender {
+    PFUser *user = [PFUser user];
+    user.username = _txtNewUser.text;
+    user.password = _txtNewPsw.text;
+    user.email = _txtEmail.text;
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            [self performSegueWithIdentifier: @"Registerback" sender: self];
+            // Hooray! Let them use the app now.
+        } else {
+            NSString *errorString = [error userInfo][@"error"];
+            // Show the errorString somewhere and let the user try again.
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                message: errorString
+                delegate:nil
+                cancelButtonTitle:@"OK"
+                otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
+}
+//End Parse Registration
+
 /*
 #pragma mark - Navigation
 
@@ -33,5 +58,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
